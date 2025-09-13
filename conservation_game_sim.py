@@ -16,7 +16,8 @@ Weinhold, D. & Andersen, L. E. (2025).
 "Conservation Strategies in Contested Environments: Dynamic Monte Carlo Simulations and a Bolivian Case Study."
 London School of Economics & Universidad Privada Boliviana. Working Paper.
 
-DOI: 10.5281/zenodo.xxxxxxx   # (replace with your actual DOI once minted)
+DOI: 10.5281/zenodo.17114490
+GitHub: https://github.com/dmweinhold/Conservation_Strategy_Simulation
 """
 
 

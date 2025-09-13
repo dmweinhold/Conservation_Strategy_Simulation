@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Conservation Strategy Game — Replication-Ready Simulator"
+authors:
+  - family-names: Weinhold
+    given-names: Diana
+    email: d.weinhold@lse.ac.uk
+  - family-names: Andersen
+    given-names: Lykke E.
+version: 1.0.0
+date-released: 2025-09-13
+type: software
+repository-code: https://github.com/dmweinhold/Conservation_Strategy_Simulation
+abstract: >
+  Monte Carlo simulator of contested conservation strategies (“Greens” vs “Farmers”),
+  producing overlay figures (static vs leakage, dynamic trajectories) and effects
+  tables (Pure Strategy Effect, Displacement–Leakage Effect), replicating the
+  analyses in Weinhold & Andersen (2025).
+preferred-citation:
+  type: article
+  title: "Conservation Strategies in Contested Environments: Dynamic Monte Carlo Simulations and a Bolivian Case Study"
+  authors:
+    - family-names: Weinhold
+      given-names: Diana
+      email: d.weinhold@lse.ac.uk
+    - family-names: Andersen
+      given-names: Lykke E.
+  year: 2025
+  notes: "Working paper."
+  doi: 10.5281/zenodo.17114490
