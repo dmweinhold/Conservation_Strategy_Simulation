@@ -2,6 +2,9 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17114490.svg)](https://doi.org/10.5281/zenodo.17114490)
 
+Documentation:
+[User Manual (PDF)]:  Conservation Sim User Guide.pdf
+
 This repository contains the **Conservation Strategy Game**, a Monte Carlo simulator of contested conservation strategies ("Greens" vs "Farmers"). The simulator produces:
 
 * **Static overlay plots** (final outcomes vs leakage)
