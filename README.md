@@ -38,7 +38,7 @@ Clone the repo and install dependencies:
 
 ```bash
 pip install -r requirements.txt
-python conservation_game_sim.py   # launches the popup UI
+python Adversarial_Procurement_Replication.py   # launches the popup UI
 ```
 
 ### Command-line usage
@@ -47,7 +47,7 @@ For advanced users, the simulator can run without the UI:
 
 ```bash
 # Claims World, strategic farmers only:
-\code{python Adversarial_Procurement_Replication.py --world claims --farmer strategic
+python Adversarial_Procurement_Replication.py --world claims --farmer strategic
 
 # Budget World with a 70--30 political split in favour of Farmers:
 python Adversarial_Procurement_Replication.py --world budget --alloc political --farmer\_pct 0.7
