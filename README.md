@@ -1,11 +1,11 @@
-# Conservation Strategy Game — Replication-Ready Simulator
+# Adversarial Procurement (Conservation Strategy) — Replication-Ready Simulator
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17114490.svg)](https://doi.org/10.5281/zenodo.17114490)
 
 Documentation:
-[User Manual (PDF)]:  Conservation Sim User Guide.pdf
+[User Manual (PDF)]:  adversarial_procurement_replication_user_guide.pdf
 
-This repository contains the **Conservation Strategy Game**, a Monte Carlo simulator of contested conservation strategies ("Greens" vs "Farmers"). The simulator produces:
+This repository contains the **Adversarial Procurement Replication**, a Monte Carlo simulator of contested conservation strategies ("Greens" vs "Farmers"). The simulator produces:
 
 * **Static overlay plots** (final outcomes vs leakage)
 * **Dynamic overlay plots** (time paths of conservation and additionality)
@@ -13,8 +13,8 @@ This repository contains the **Conservation Strategy Game**, a Monte Carlo simul
 
 The simulator replicates the analyses and figures from the working paper:
 
-> Weinhold, D. & Andersen, L. E. (2025).
-> *Conservation Strategies in Contested Environments: Dynamic Monte Carlo Simulations and a Bolivian Case Study.*
+> Weinhold, D. & Andersen, L. E. (2026).
+> *Adversarial Procurement in Two-Value Space: Insights and Evidence for Conservation Siting*
 > London School of Economics & Universidad Privada Boliviana. Working Paper.
 > [DOI: 10.5281/zenodo.17114490](https://doi.org/10.5281/zenodo.17114490)
 
@@ -46,11 +46,17 @@ python conservation_game_sim.py   # launches the popup UI
 For advanced users, the simulator can run without the UI:
 
 ```bash
-# Run all outputs for both farmer strategies
-python conservation_game_sim.py --mode all --farmer naive --farmer strategic
+# Claims World, strategic farmers only:
+\code{python Adversarial_Procurement_Replication.py --world claims --farmer strategic
 
-# Static outcomes for strategic farmers only
-python conservation_game_sim.py --mode static --farmer strategic --leakages 1.0,0.5,0.0
+# Budget World with a 70--30 political split in favour of Farmers:
+python Adversarial_Procurement_Replication.py --world budget --alloc political --farmer\_pct 0.7
+
+# Claims World with a custom strategy subset and leakage grid:
+python Adversarial_Procurement_Replication.py --world claims --greens max\_env,hot\_spot,block\_farmers --leakages 1.0,0.5,0.0
+
+# Budget World with advanced options:
+python Adversarial_Procurement_Replication.py --world budget --budget\_theta 0.0 --hotspot\_additive off
 ```
 
 Options include:
@@ -59,10 +65,8 @@ Options include:
 * `--alloc`: allocation rule (equal or political)
 * `--farmer_pct`: farmer share if allocation = political
 * `--rho`: correlation between environmental and agricultural values
-* `--rounds`: number of rounds (`auto` = one claim per side per round)
 * `--reps`: number of Monte Carlo replications
 * `--outdir`: output directory (default `outputs/`)
-* `--risky-rule`: strategic farmer risky set (`green_claims` or `farmer_claims`)
 * `--seed`: random seed
 
 ---
@@ -82,8 +86,8 @@ By default, the repo ignores generated PNG/CSV files via `.gitignore` (only a pl
 
 If you use this simulator in teaching, research, or publications, please cite:
 
-> Weinhold, D. & Andersen, L. E. (2025).
-> *Conservation Strategies in Contested Environments: Dynamic Monte Carlo Simulations and a Bolivian Case Study.*
+> Weinhold, D. & Andersen, L. E. (2026).
+> *Adversarial Procurement in Two-Value Space: \\ Insights and Evidence for Conservation Siting*
 > London School of Economics & Universidad Privada Boliviana. Working Paper.
 > DOI: [10.5281/zenodo.17114490](https://doi.org/10.5281/zenodo.17114490)
 
